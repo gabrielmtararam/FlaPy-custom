@@ -8,7 +8,7 @@ authors = [
 ]
 license = "LGPL-3.0+"
 readme = "README.md"
-repository = "https://github.com/se2p/flapy"
+repository = "https://github.com/gabrielmtararam/FlaPy-custom"
 keywords = [
   "unit test",
   "flaky test",

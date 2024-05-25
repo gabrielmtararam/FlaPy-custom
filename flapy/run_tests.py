@@ -293,8 +293,9 @@ class PyTestRunner:
                     self._logger.info(
                         "no pypi tag specified -> falling back to searching for requirements"
                     )
-                    # packages = self.find_dependencies()
-                    # env.add_packages_for_installation(packages)
+                    packages = self.find_dependencies()
+                    print(f"packages {packages}")
+                    env.add_packages_for_installation(packages)
 
                     reqs_files = self.find_requirements_files()
                     self._logger.info(
