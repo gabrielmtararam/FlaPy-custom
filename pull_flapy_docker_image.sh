@@ -15,10 +15,10 @@ debug_echo "-- Node $HOSTNAME"
 debug_echo "-- Prepare for docker command"
 source prepare_for_docker_command.sh || exit
 
-debug_echo "-- Loading image ${FLAPY_DOCKER_IMAGE}"
-date -Iseconds
-flapy_docker_command pull "${FLAPY_DOCKER_IMAGE}"
-date -Iseconds
+#debug_echo "-- Loading image ${FLAPY_DOCKER_IMAGE}"
+#date -Iseconds
+#flapy_docker_command pull "${FLAPY_DOCKER_IMAGE}"
+#date -Iseconds
 
 debug_echo "-- Echo image+container info"
 ./echo_flapy_docker_info.sh

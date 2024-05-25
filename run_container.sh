@@ -42,17 +42,24 @@ META_FILE="$ITERATION_RESULTS_DIR/flapy-iteration-result.yaml"
 # -- LOG META INFO
 debug_echo "-- Logging Meta info"
 FLAPY_IMAGE_ID=$(flapy_docker_command images $FLAPY_DOCKER_IMAGE --format "{{.ID}}" | head -n 1)
+FLAPY_IMAGE_TAG=$(flapy_docker_command images $FLAPY_DOCKER_IMAGE --format "{{.Tag}}" | head -n 1)
+FLAPY_IMAGE_REP=$(flapy_docker_command images $FLAPY_DOCKER_IMAGE --format "{{.Repository}}" | head -n 1)
 echo "hostname_run_container: $(cat /etc/hostname)" >> "$META_FILE"
 echo "flapy_image_id:         ${FLAPY_IMAGE_ID}"    >> "$META_FILE"
 
 # -- EXECUTE CONTAINER
 debug_echo "-- Running container"
+debug_echo "-- custom FLAPY_IMAGE_TAG  ${FLAPY_IMAGE_TAG}"
+debug_echo "-- custom FLAPY_IMAGE_TAG  ${FLAPY_IMAGE_REP}"
+debug_echo "-- custom flapy image  ${FLAPY_IMAGE_ID}"
+debug_echo "-- hostname_run_container flapy image   $(cat /etc/hostname)"
 if [[ $PROJECT_URL == http* ]]
 then
     flapy_docker_command run --rm $DOCKER_FLAGS \
         -v "$ITERATION_RESULTS_DIR:/results" \
         $FLAPY_DOCKER_IMAGE \
         "${PROJECT_NAME}" "${PROJECT_URL}" "${PROJECT_HASH}" "${PYPI_TAG}" "${FUNCS_TO_TRACE}" "${TESTS_TO_BE_RUN}" "${NUM_RUNS}" "${PLUS_RANDOM_RUNS}" "${FLAPY_ARGS}"
+    debug_echo "-- ###FINISH"
 else
     PROJECT_URL_ABS_PATH=$(realpath "$PROJECT_URL")
     flapy_docker_command run --rm $DOCKER_FLAGS \
