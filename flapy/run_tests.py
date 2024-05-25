@@ -294,7 +294,9 @@ class PyTestRunner:
                         "no pypi tag specified -> falling back to searching for requirements"
                     )
                     packages = self.find_dependencies()
-                    print(f"packages {packages}")
+                    self._logger.info(
+                        f"\n ############packages {packages}\n "
+                    )
                     env.add_packages_for_installation(packages)
 
                     reqs_files = self.find_requirements_files()
