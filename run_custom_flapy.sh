@@ -1,0 +1,1 @@
+ time ./flapy.sh run --out-dir ./results/example_results_httpsgithubcommongodbmotor /home/gabrieltararam/PypiComparer/PypiComparator/PypiComparator/repositories/flapy/temporary_example.csv 1  &&  time ./flapy.sh parse ResultsDirCollection --path ./results/example_results_httpsgithubcommongodbmotor get_tests_overview _df to_csv --index=false
