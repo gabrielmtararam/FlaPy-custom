@@ -1,0 +1,17 @@
+pypattyrn.creational.factory
+pypattyrn.behavioral.iterator
+pypattyrn.behavioral.visitor
+pypattyrn.creational.singleton
+pypattyrn.creational.builder
+pypattyrn.behavioral.null
+pypattyrn.behavioral.memento
+pypattyrn.structural.flyweight
+pypattyrn.creational.prototype
+pypattyrn.structural.decorator
+pypattyrn.creational.pool
+pypattyrn.behavioral.chain
+pypattyrn.behavioral.mediator
+pypattyrn.structural.adapter
+pypattyrn.structural.composite
+pypattyrn.behavioral.command
+pypattyrn.behavioral.observer

@@ -1,0 +1,81 @@
+REPOSITORY                               TAG       IMAGE ID       CREATED         SIZE
+my_modified_flapy                        latest    8dc275d930fb   2 months ago    1.17GB
+<none>                                   <none>    265dc639d7a7   2 months ago    1.17GB
+<none>                                   <none>    f57860929fb3   2 months ago    1.17GB
+<none>                                   <none>    d23d1b11b68b   2 months ago    1.17GB
+<none>                                   <none>    6e154f589f9e   2 months ago    1.17GB
+<none>                                   <none>    c7726daa2627   2 months ago    1.17GB
+<none>                                   <none>    9da63e2fa079   2 months ago    1.17GB
+<none>                                   <none>    3dd471e777ad   2 months ago    1.17GB
+<none>                                   <none>    b4fbd73a8325   2 months ago    1.17GB
+<none>                                   <none>    7a4ed9516c56   2 months ago    1.17GB
+<none>                                   <none>    b58a72ef213e   2 months ago    1.17GB
+<none>                                   <none>    7d185554c82b   2 months ago    1.17GB
+<none>                                   <none>    7c14319781c5   2 months ago    1.17GB
+<none>                                   <none>    8cfff69c8f06   2 months ago    1.17GB
+<none>                                   <none>    a3a25d64538d   2 months ago    1.17GB
+<none>                                   <none>    dc78f6a57ba6   2 months ago    1.17GB
+<none>                                   <none>    eb0b5dd705c0   2 months ago    1.17GB
+<none>                                   <none>    79c8c81ca18e   2 months ago    1.17GB
+<none>                                   <none>    962ddf931ffa   2 months ago    1.17GB
+<none>                                   <none>    62c152d5b979   2 months ago    1.17GB
+<none>                                   <none>    cc9cecfefab7   2 months ago    1.17GB
+<none>                                   <none>    c31a6033d9eb   2 months ago    1.17GB
+<none>                                   <none>    b5235772c02f   2 months ago    1.17GB
+<none>                                   <none>    1e91e1d5e49f   2 months ago    1.17GB
+<none>                                   <none>    e4cb6023ba61   2 months ago    1.17GB
+<none>                                   <none>    7fcc6bc6c2c6   2 months ago    1.17GB
+<none>                                   <none>    c13be93d642f   2 months ago    1.17GB
+<none>                                   <none>    1f722caebaec   2 months ago    1.17GB
+<none>                                   <none>    1474e9abe7bc   2 months ago    1.17GB
+<none>                                   <none>    47c2167fa71a   2 months ago    1.17GB
+<none>                                   <none>    0a1eb1f1e087   2 months ago    1.17GB
+<none>                                   <none>    0c084f47f5c8   2 months ago    1.17GB
+<none>                                   <none>    faf97f61fcd5   2 months ago    1.49GB
+<none>                                   <none>    408bbdda2333   2 months ago    1.16GB
+portainer/portainer-ce                   latest    a3f85c245ec3   3 months ago    293MB
+gruberma/flapy                           latest    bf8498b4fa15   15 months ago   1.17GB
+registry.hub.docker.com/gruberma/flapy   latest    bf8498b4fa15   15 months ago   1.17GB
+CONTAINER ID   IMAGE                    COMMAND        CREATED        STATUS             PORTS                                                           NAMES
+879643c976b7   portainer/portainer-ce   "/portainer"   2 months ago   Up About an hour   8000/tcp, 9443/tcp, 0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   portainer
+-- ./clone_and_run_tests.sh
+    Project name:         httpsgithubcomtylerlabergePyPattyrn
+    Project url:          /home/gabrieltararam/flapy-tools/FlaPy-Tools/FlapyTools/repositories/httpsgithubcomtylerlabergePyPattyrn
+    Project hash:         
+    PyPi tag:             
+    Tests to be run:      
+    Funcs to trace:       
+    Num runs:             1
+    Plus random runs:     
+    Flapy Args:           
+ CWD = /workdir
+Clone Repository into /workdir/httpsgithubcomtylerlabergePyPattyrn
+Run tests in same order mode
+[INFO](RepositoryAnalyser): Config: Namespace(logfile='/workdir/sameOrder/execution.log', repository='/workdir/httpsgithubcomtylerlabergePyPattyrn', temp='/workdir/sameOrder/tmp', project_name='httpsgithubcomtylerlabergePyPattyrn', pypi_tag='', num_runs=1, random_order_bucket=None, random_order_seed=None, trace='', tests_to_be_run='\r', collect_sqlite_coverage_database=False)
+[2024-08-05 18:43:12,878][   INFO][        run_tests.py: 507 -                  run() ] Config: Namespace(logfile='/workdir/sameOrder/execution.log', repository='/workdir/httpsgithubcomtylerlabergePyPattyrn', temp='/workdir/sameOrder/tmp', project_name='httpsgithubcomtylerlabergePyPattyrn', pypi_tag='', num_runs=1, random_order_bucket=None, random_order_seed=None, trace='', tests_to_be_run='\r', collect_sqlite_coverage_database=False)
+[INFO](RepositoryAnalyser): Iteration 0 of 1 for project httpsgithubcomtylerlabergePyPattyrn (random=None)
+[2024-08-05 18:43:12,879][   INFO][        run_tests.py: 514 -                  run() ] Iteration 0 of 1 for project httpsgithubcomtylerlabergePyPattyrn (random=None)
+^CTraceback (most recent call last):
+  File "/usr/local/bin/flapy_run_tests", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.10/site-packages/flapy/run_tests.py", line 683, in main
+    analyser.run()
+  File "/usr/local/lib/python3.10/site-packages/flapy/run_tests.py", line 548, in run
+    out, err = runner.run()
+  File "/usr/local/lib/python3.10/site-packages/flapy/run_tests.py", line 311, in run
+    with virtualenv(env_name=self._project_name, logger=self._logger, root_dir=self._config.temp) as env:
+  File "/usr/local/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/site-packages/flapy/run_tests.py", line 259, in virtualenv
+    venv = VirtualEnvironment(env_name, logger, root_dir)
+  File "/usr/local/lib/python3.10/site-packages/flapy/run_tests.py", line 132, in __init__
+    virtenv.create_environment(self._env_dir)
+  File "/usr/local/lib/python3.10/site-packages/virtualenv.py", line 1200, in create_environment
+    install_wheel(to_install, py_executable, search_dirs, download=download)
+  File "/usr/local/lib/python3.10/site-packages/virtualenv.py", line 1040, in install_wheel
+    _install_wheel_with_search_dir(download, project_names, py_executable, search_dirs)
+  File "/usr/local/lib/python3.10/site-packages/virtualenv.py", line 1137, in _install_wheel_with_search_dir
+    call_subprocess(cmd, show_stdout=False, extra_env=env, stdin=script)
+  File "/usr/local/lib/python3.10/site-packages/virtualenv.py", line 936, in call_subprocess
+    line = stdout.readline()
+KeyboardInterrupt

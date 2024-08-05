@@ -1,0 +1,105 @@
+REPOSITORY                               TAG       IMAGE ID       CREATED         SIZE
+my_modified_flapy                        latest    8dc275d930fb   2 months ago    1.17GB
+<none>                                   <none>    265dc639d7a7   2 months ago    1.17GB
+<none>                                   <none>    f57860929fb3   2 months ago    1.17GB
+<none>                                   <none>    d23d1b11b68b   2 months ago    1.17GB
+<none>                                   <none>    6e154f589f9e   2 months ago    1.17GB
+<none>                                   <none>    c7726daa2627   2 months ago    1.17GB
+<none>                                   <none>    9da63e2fa079   2 months ago    1.17GB
+<none>                                   <none>    3dd471e777ad   2 months ago    1.17GB
+<none>                                   <none>    b4fbd73a8325   2 months ago    1.17GB
+<none>                                   <none>    7a4ed9516c56   2 months ago    1.17GB
+<none>                                   <none>    b58a72ef213e   2 months ago    1.17GB
+<none>                                   <none>    7d185554c82b   2 months ago    1.17GB
+<none>                                   <none>    7c14319781c5   2 months ago    1.17GB
+<none>                                   <none>    8cfff69c8f06   2 months ago    1.17GB
+<none>                                   <none>    a3a25d64538d   2 months ago    1.17GB
+<none>                                   <none>    dc78f6a57ba6   2 months ago    1.17GB
+<none>                                   <none>    eb0b5dd705c0   2 months ago    1.17GB
+<none>                                   <none>    79c8c81ca18e   2 months ago    1.17GB
+<none>                                   <none>    962ddf931ffa   2 months ago    1.17GB
+<none>                                   <none>    62c152d5b979   2 months ago    1.17GB
+<none>                                   <none>    cc9cecfefab7   2 months ago    1.17GB
+<none>                                   <none>    c31a6033d9eb   2 months ago    1.17GB
+<none>                                   <none>    b5235772c02f   2 months ago    1.17GB
+<none>                                   <none>    1e91e1d5e49f   2 months ago    1.17GB
+<none>                                   <none>    e4cb6023ba61   2 months ago    1.17GB
+<none>                                   <none>    7fcc6bc6c2c6   2 months ago    1.17GB
+<none>                                   <none>    c13be93d642f   2 months ago    1.17GB
+<none>                                   <none>    1f722caebaec   2 months ago    1.17GB
+<none>                                   <none>    1474e9abe7bc   2 months ago    1.17GB
+<none>                                   <none>    47c2167fa71a   2 months ago    1.17GB
+<none>                                   <none>    0a1eb1f1e087   2 months ago    1.17GB
+<none>                                   <none>    0c084f47f5c8   2 months ago    1.17GB
+<none>                                   <none>    faf97f61fcd5   2 months ago    1.49GB
+<none>                                   <none>    408bbdda2333   2 months ago    1.16GB
+portainer/portainer-ce                   latest    a3f85c245ec3   3 months ago    293MB
+gruberma/flapy                           latest    bf8498b4fa15   15 months ago   1.17GB
+registry.hub.docker.com/gruberma/flapy   latest    bf8498b4fa15   15 months ago   1.17GB
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS             PORTS                                                           NAMES
+ecc60be0103c   my_modified_flapy        "results_parser Resu…"   29 seconds ago   Created                                                                            strange_archimedes
+879643c976b7   portainer/portainer-ce   "/portainer"             2 months ago     Up About an hour   8000/tcp, 9443/tcp, 0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   portainer
+-- ./clone_and_run_tests.sh
+    Project name:         httpsgithubcomfaifpythonpatterns
+    Project url:          /home/gabrieltararam/flapy-tools/FlaPy-Tools/FlapyTools/repositories/httpsgithubcomfaifpythonpatterns
+    Project hash:         
+    PyPi tag:             
+    Tests to be run:      
+    Funcs to trace:       
+    Num runs:             1
+    Plus random runs:     
+    Flapy Args:           
+ CWD = /workdir
+Clone Repository into /workdir/httpsgithubcomfaifpythonpatterns
+Run tests in same order mode
+[INFO](RepositoryAnalyser): Config: Namespace(logfile='/workdir/sameOrder/execution.log', repository='/workdir/httpsgithubcomfaifpythonpatterns', temp='/workdir/sameOrder/tmp', project_name='httpsgithubcomfaifpythonpatterns', pypi_tag='', num_runs=1, random_order_bucket=None, random_order_seed=None, trace='', tests_to_be_run='\r', collect_sqlite_coverage_database=False)
+[2024-08-05 18:43:44,704][   INFO][        run_tests.py: 507 -                  run() ] Config: Namespace(logfile='/workdir/sameOrder/execution.log', repository='/workdir/httpsgithubcomfaifpythonpatterns', temp='/workdir/sameOrder/tmp', project_name='httpsgithubcomfaifpythonpatterns', pypi_tag='', num_runs=1, random_order_bucket=None, random_order_seed=None, trace='', tests_to_be_run='\r', collect_sqlite_coverage_database=False)
+[INFO](RepositoryAnalyser): Iteration 0 of 1 for project httpsgithubcomfaifpythonpatterns (random=None)
+[2024-08-05 18:43:44,704][   INFO][        run_tests.py: 514 -                  run() ] Iteration 0 of 1 for project httpsgithubcomfaifpythonpatterns (random=None)
+[INFO](RepositoryAnalyser): no pypi tag specified -> falling back to searching for requirements
+[2024-08-05 18:43:47,676][   INFO][        run_tests.py: 320 -                  run() ] no pypi tag specified -> falling back to searching for requirements
+[INFO](RepositoryAnalyser): 
+ ############current_file /workdir/sameOrder/tmp/flapy_repo_copy/setup.py 
+[2024-08-05 18:43:47,676][   INFO][        run_tests.py: 447 -     find_setup_files() ] 
+ ############current_file /workdir/sameOrder/tmp/flapy_repo_copy/setup.py 
+[INFO](RepositoryAnalyser): 
+ ############ is setup /workdir/sameOrder/tmp/flapy_repo_copy/setup.py 
+[2024-08-05 18:43:47,676][   INFO][        run_tests.py: 451 -     find_setup_files() ] 
+ ############ is setup /workdir/sameOrder/tmp/flapy_repo_copy/setup.py 
+[INFO](RepositoryAnalyser): 
+ ############setup_files ['/workdir/sameOrder/tmp/flapy_repo_copy/setup.py']
+ 
+[2024-08-05 18:43:47,676][   INFO][        run_tests.py: 329 -                  run() ] 
+ ############setup_files ['/workdir/sameOrder/tmp/flapy_repo_copy/setup.py']
+ 
+[INFO](RepositoryAnalyser): found the following requirements files: ['/workdir/sameOrder/tmp/flapy_repo_copy/requirements-dev.txt']
+[2024-08-05 18:43:47,676][   INFO][        run_tests.py: 335 -                  run() ] found the following requirements files: ['/workdir/sameOrder/tmp/flapy_repo_copy/requirements-dev.txt']
+[INFO](RepositoryAnalyser): executing commands source /workdir/sameOrder/tmp/flapy_virtual_env/bin/activate;python -V;echo "pip install coverage toml: $(pip install coverage[toml])";echo "pip install setuptools: $(pip install setuptools)";echo "pip install .: $(pip install .)";pip install -r /workdir/sameOrder/tmp/flapy_repo_copy/requirements-dev.txt;pip install -r /workdir/sameOrder/tmp/flapy_repo_copy/requirements-dev.txt;echo "pip install: $(pip install pytest==6.2.5)";echo "pip install: $(pip install pytest-cov==2.8.1)";echo "python setup build:python /workdir/sameOrder/tmp/flapy_repo_copy/setup.py $(python /workdir/sameOrder/tmp/flapy_repo_copy/setup.py build)";echo "python setup install:python /workdir/sameOrder/tmp/flapy_repo_copy/setup.py $(python /workdir/sameOrder/tmp/flapy_repo_copy/setup.py install)";echo "pip install -e .: $(pip install -e .)";echo "pip install .: $(pip install .[test,dev,docs])";echo "pip freeze: $(pip freeze)";echo "which python: $(which python)";echo "which pip:    $(which pip)";echo "which pytest: $(which pytest)";echo "python path: ";python -c "import sys; print(sys.path)";PYTHONPATH=. pytest -v --rootdir=. --junitxml=/workdir/sameOrder/tmp/httpsgithubcomfaifpythonpatterns_output0.xml --cov=. --cov-branch --cov-report xml:/workdir/sameOrder/tmp/httpsgithubcomfaifpythonpatterns_coverage0.xml  
+[2024-08-05 18:43:47,676][   INFO][        run_tests.py: 232 -         run_commands() ] executing commands source /workdir/sameOrder/tmp/flapy_virtual_env/bin/activate;python -V;echo "pip install coverage toml: $(pip install coverage[toml])";echo "pip install setuptools: $(pip install setuptools)";echo "pip install .: $(pip install .)";pip install -r /workdir/sameOrder/tmp/flapy_repo_copy/requirements-dev.txt;pip install -r /workdir/sameOrder/tmp/flapy_repo_copy/requirements-dev.txt;echo "pip install: $(pip install pytest==6.2.5)";echo "pip install: $(pip install pytest-cov==2.8.1)";echo "python setup build:python /workdir/sameOrder/tmp/flapy_repo_copy/setup.py $(python /workdir/sameOrder/tmp/flapy_repo_copy/setup.py build)";echo "python setup install:python /workdir/sameOrder/tmp/flapy_repo_copy/setup.py $(python /workdir/sameOrder/tmp/flapy_repo_copy/setup.py install)";echo "pip install -e .: $(pip install -e .)";echo "pip install .: $(pip install .[test,dev,docs])";echo "pip freeze: $(pip freeze)";echo "which python: $(which python)";echo "which pip:    $(which pip)";echo "which pytest: $(which pytest)";echo "python path: ";python -c "import sys; print(sys.path)";PYTHONPATH=. pytest -v --rootdir=. --junitxml=/workdir/sameOrder/tmp/httpsgithubcomfaifpythonpatterns_output0.xml --cov=. --cov-branch --cov-report xml:/workdir/sameOrder/tmp/httpsgithubcomfaifpythonpatterns_coverage0.xml  
+^C^CTraceback (most recent call last):
+  File "/usr/local/lib/python3.10/subprocess.py", line 1149, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/local/lib/python3.10/subprocess.py", line 2000, in _communicate
+    ready = selector.select(timeout)
+  File "/usr/local/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/flapy_run_tests", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.10/site-packages/flapy/run_tests.py", line 683, in main
+    analyser.run()
+  File "/usr/local/lib/python3.10/site-packages/flapy/run_tests.py", line 548, in run
+    out, err = runner.run()
+  File "/usr/local/lib/python3.10/site-packages/flapy/run_tests.py", line 406, in run
+    out, err = env.run_commands(commands)
+  File "/usr/local/lib/python3.10/site-packages/flapy/run_tests.py", line 238, in run_commands
+    out, err = process.communicate()
+  File "/usr/local/lib/python3.10/subprocess.py", line 1160, in communicate
+    self._wait(timeout=sigint_timeout)
+  File "/usr/local/lib/python3.10/subprocess.py", line 1932, in _wait
+    time.sleep(delay)
+KeyboardInterrupt

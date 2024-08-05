@@ -1,0 +1,8 @@
+num_runs:               1
+run_on:                 "locally"
+constraint:             ""
+input_csv:              "/home/gabrieltararam/flapy-tools/FlaPy-Tools/FlapyTools/repositories/flapy/temporary_example.csv"
+plus_random_runs:       ""
+core_args:              ""
+out_dir:                "/home/gabrieltararam/flapy-tools/FlaPy-Tools/FlapyTools/repositories/flapy/results/example_results_httpsgithubcomtylerlabergePyPattyrn"
+input_csv_length:       2
